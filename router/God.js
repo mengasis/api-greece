@@ -1,22 +1,20 @@
 import { Router } from 'express'
 
-import jsonGods from '../data/gods.json'
+import jsonGods from '../data/gods.js'
 
 const api = Router()
 
-api.get('/gods', (req, res, next) =>{
-    res.json(jsonGods)
+api.get('/gods', (req, res) =>{
+	res.json(jsonGods)
 })
 
-api.get('/god', (req, res, next) =>{
-  const {
-    query: {
-      id = 1
-    }
-  } = req
+api.get('/god/:id', (req, res) =>{
+	const {
+		id = 1
+	} = req
 
-    const selectedGod = jsonGods.gods.filter(good => good.id === Number(id));
-    res.json({ gods: selectedGod})
+	const selectedGod = jsonGods.gods.filter(good => good.id === Number(id))
+	res.json({ gods: selectedGod})
 
 })
 

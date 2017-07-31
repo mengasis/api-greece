@@ -8,5 +8,5 @@ const app = express()
 app.use('/api', router)
 
 app.listen(config.serverPort, () => {
-    console.log(`Escuchando en ${config.baseUrl}:${config.serverPort}`);
+	console.log(`Escuchando en ${config.baseUrl}:${config.serverPort}`)
 })
