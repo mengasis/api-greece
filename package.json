@@ -1,28 +1,28 @@
 {
-  "name": "api-greece",
+  "name": "api-standard-es6",
   "version": "0.1.0",
-  "description": "API Antigua Grecia",
+  "description": "Standard API in ES6 with all kinds of information",
   "main": "index.js",
   "scripts": {
     "build": "babel-node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mengasis/api-greece.git"
+    "url": "git+https://github.com/mengasis/api-standard-es6.git"
   },
   "keywords": [
-    "Ancient",
-    "Greece",
+    "API",
     "Node",
     "Express",
-    "ES6"
+    "ES6",
+    "Babel"
   ],
   "author": "Manuel Venegas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mengasis/api-greece/issues"
+    "url": "https://github.com/mengasis/api-standard-es6.git/issues"
   },
-  "homepage": "https://github.com/mengasis/api-greece#readme",
+  "homepage": "https://github.com/mengasis/api-standard-es6#readme",
   "dependencies": {
     "express": "^4.15.3"
   },
